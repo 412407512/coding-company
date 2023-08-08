@@ -45,7 +45,7 @@ if (/Mobi/.test(navigator.userAgent)) {
 
 selectMenu.forEach((e) => {
   e.addEventListener("change", () => {
-    location.href = `../index.html#services`;
+    location.href = `${location.href}/coding-company/index.html#services`;
   });
 });
 
