@@ -7,7 +7,7 @@
     position: relative;
 }
 .container .header{
-    background-image: url('./../../public/background.svg');
+    background-image: url('https://64fe2c0a866787616f17bb7d--stellular-bublanina-6fe0ce.netlify.app/public/background.svg');
     background-size: cover;
     background-position: center;
     /* background-attachment: fixed; */
@@ -305,7 +305,7 @@ nav ul li:not(.ar) a:hover , .NavMobile li:not(.ar) a:hover{
 /* services */
 
 .services{
-    background-image: url('../../public/wave-haikei.svg');
+    background-image: url('https://64fe2c0a866787616f17bb7d--stellular-bublanina-6fe0ce.netlify.app/public/wave-haikei.svg');
     background-position: center;
     background-size: cover;
     padding: 50px 100px;
@@ -402,7 +402,7 @@ nav ul li:not(.ar) a:hover , .NavMobile li:not(.ar) a:hover{
 /* Works */
 
 .works{
-    background-image: url('../../public/wave-haikei.svg');
+    background-image: url('https://64fe2c0a866787616f17bb7d--stellular-bublanina-6fe0ce.netlify.app/public/wave-haikei.svg');
     background-position: center;
     background-size: cover;
     padding: 50px 100px;
@@ -532,7 +532,7 @@ nav ul li:not(.ar) a:hover , .NavMobile li:not(.ar) a:hover{
 
     padding: 50px 100px;
     margin-bottom: 50px;
-    background-image: url(../../public/back3.svg);
+    background-image: url(https://64fe2c0a866787616f17bb7d--stellular-bublanina-6fe0ce.netlify.app/public/back3.svg);
     background-size: cover;
     background-position: center;
     display: none;
@@ -654,7 +654,7 @@ nav ul li:not(.ar) a:hover , .NavMobile li:not(.ar) a:hover{
 
 /* Footer */
 footer{
-    background-image: linear-gradient(rgba(0, 42, 255, 0.1) ,rgba(14, 38, 71, 0.1)),url(../../public/footer.jpg);
+    background-image: linear-gradient(rgba(0, 42, 255, 0.1) ,rgba(14, 38, 71, 0.1)),url(https://64fe2c0a866787616f17bb7d--stellular-bublanina-6fe0ce.netlify.app/public/footer.jpg);
     background-position: center;
     background-size: cover;
     padding: 50px 20px;
