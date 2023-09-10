@@ -349,6 +349,20 @@
       let btnFromFooter = document.querySelector('#contact button').onclick = () => {
         location.href = './public/contact.html';
       }
+      let puse = document.querySelector(".puse"),
+      icon = puse.querySelector("i");
+
+    icon.addEventListener("click", () => {
+      if (icon.classList.contains('fa-play')) {
+        puse.previousElementSibling.play();
+        icon.classList.replace('fa-play', 'fa-pause');
+      }
+      else if (icon.classList.contains('fa-pause')) {
+        puse.previousElementSibling.pause();
+        icon.classList.replace('fa-pause', 'fa-play');
+      }
+    });
+
     </script>
   </body>
 
