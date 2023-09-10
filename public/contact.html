@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description"
+            content="Coding Company  offers professional web development, mobile app development, UX/UI design, and graphic design services. Contact us for expert software solutions.">
+        <!-- <meta  -->
+        <link rel="stylesheet" href="../src/css/style.css"/>
+        <link rel="stylesheet" href="../src/css/contact.css">
+        <link rel="shortcut icon" href="./favicon.png" type="image/x-icon"/>
+        <!-- Arabic Meta Tags -->
+        <meta name="description"
+            content="تقدم شركة Coding تطويرًا احترافيًا للويب وتطوير تطبيقات الأجهزة المحمولة وتصميم UX / UI وخدمات تصميم الرسوم. اتصل بنا للحصول على حلول برمجية متخصصة Coding Company تقدم خدمات تطوير الويب المحترفة، تطوير تطبيقات الهواتف المحمولة، تصميم تجربة المستخدم والتصميم الجرافيكي. اتصل بنا للحصول على حلول برمجية متخصصة">
+        
+        <meta name="keywords"
+            content="شركة Coding، تطوير الويب، تطبيقات الهواتف المحمولة، تصميم UX/UI، تصميم جرافيكي، حلول برمجية، احترافية، غزة">
+        
+        <!-- English Meta Tags -->
+        <meta name="description"
+            content="Coding Company offers professional web development, mobile app development, UX/UI design, and graphic design services. Contact us for expert software solutions.">
+        
+        <meta name="keywords"
+            content="Coding Company, web development, mobile app development, UX/UI design, graphic design, software solutions, professional, Gaza">
+
+        <!-- FontAAwsome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- sender Mail -->
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+        <!-- <title>Coding Company</title> -->
+        <!-- content="We are a web development company that specializes in building websites and mobile applications for small -->
+
+        <title>Coding Company | Web Development, Mobile App Development, UX/UI Design, Graphic Design</title>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- Start Header -->
+            <section class="header" id="home">
+                <nav class="navbar">
+                    <a href="/index.html#home" class="brand"><img loading="lazy" src="./logo.png" alt="" /></a>
+                    <div id="iconNavBar" class="icon">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <ul>
+                        <li><a href="../index.html" class="homeLink">Home</a></li>
+                        <li><a href="../index.html#about" class="aboutLink">About</a></li>
+                        <li>
+                            <!-- <a href="">Service</a> -->
+                            <select class="linkHeader" name="">
+                                <option value="" class="serviceLink">Services</option>
+                                <option value="" class="devWebLink">Development Website</option>
+                                <option value="" class="devMobileLink">Development Mobile Apps</option>
+                                <option value="" class="uxLink">UX UI</option>
+                                <option value="" class="graphicLink">Graphic Design</option>
+                                <option value="" class="motionLink">Motion Graphic</option>
+                                <option value="" class="mediaLink">Social Media</option>
+                            </select>
+                        </li>
+                        <li><a href="../index.html#works" class="worksLink hiddenObserve">Our Works</a></li>
+                        <!-- <li><a href="../index.html#team" class="teamLink">Our Team</a></li> -->
+                        <!-- <li><a href="#contact" class="contactLink">Contact</a></li> -->
+                        <li class="ar"><a onclick="changeLanguage('ar')">AR</a></li>
+                        <li class="en"><a onclick="changeLanguage('en')">EN</a></li>
+                    </ul>
+                </nav>
+                <ul class="NavMobile d-none">
+                    <li><a href="../index.html" class="homeLink">Home</a></li>
+                    <li><a href="../index.html#about" class="aboutLink">About</a></li>
+                    <li>
+                        <select class="linkHeader" name="" id="" onchange="redirectToservice()">
+                            <option value="serviceLink" class="serviceLink">Services</option>
+                            <option value="devWebLink" class="devWebLink">Development Website</option>
+                            <option value="devMobileLink" class="devMobileLink">Development Mobile Apps</option>
+                            <option value="uxLink" class="uxLink">UX UI</option>
+                            <option value="graphicLink" class="graphicLink">Graphic Design</option>
+                            <option value="motionLink" class="motionLink">Motion Graphic</option>
+                            <option value="mediaLink" class="mediaLink">Social Media</option>
+                        </select>
+                    </li>
+                   <li><a href="../index.html#works" class="worksLink hiddenObserve">- Our Works</a></li>
+                    <!-- <li><a href="../index.html#team" class="teamLink">Our Team</a></li> -->
+                    <li class="ar"><a onclick="changeLanguage('ar')">AR</a></li>
+                    <li class="en"><a onclick="changeLanguage('en')">EN</a></li>
+                </ul>
+                <!-- start Home Page -->
+                <section>
+                    <h4 class="nameCompany hiddenObserve">Coding Company</h4>
+                    <br>
+                    <p class="hiddenObserve"><a href="../index.html" class="homeLink">Home</a> | <a href="./contact.html" class="contactLink">Contact us</a></p>
+                </section>
+                <!-- End Home Page -->
+            </section>
+            <!-- End Header -->
+
+            <section class="contactWithUs">
+             <div>
+                <div class="form">
+                    <form id="formContact">
+                        <h2 class="keepinTouch hiddenObserve">Get In Touch</h2>
+                        <!-- *<span class="danger-clr">error</span> -->
+                        <div class="group hiddenObserve">
+                            <input class="hiddenObserve" type="text" name="fname" id="fname" placeholder="your First Name Sir." required>
+                            <input class="hiddenObserve" type="text" name="lname" id="lname" placeholder="your Last Name Sir." required>
+                        </div>
+    
+                        <div class="group">
+                            <input class="hiddenObserve" type="email" id="email" name="email" placeholder="your email Sir." required>
+                            <input class="hiddenObserve" type="text" name="phone" id="phone" placeholder="your phone Sir." required>
+                        </div>
+                        <div class="group">
+                            <textarea class="hiddenObserve" name="message" id="message" placeholder="Your message Sir." cols="30" rows="5"></textarea>
+                        </div>
+                        <div class="group">
+                            <button class="sendMessage btn hiddenObserve" id="submitMessage">Submit Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="scoialate">
+                    <h2 class="nameCompany hiddenVertical">Coding Company</h2>
+                    <div class="hiddenVertical">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:codingcompany25@gmail.com">Coding@gmail.com</a>
+                    </div>
+                    <div class="hiddenVertical">
+                        <i class="fab fa-whatsapp"></i>
+                        <a  href="https://wa.me/972592848457">+972 59-284-8457</a>
+                    </div>
+                    <div class="hiddenVertical">
+                        <i class="fab fa-facebook"></i>
+                        <a href="https://www.facebook.com/codingcompany77">Coding Company</a>
+                    </div>
+                    <div class="hiddenVertical">
+                        <a href="mailto:codingcompany25@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                        <a  href="https://wa.me/972592848457" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/codingcompany77" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+             </div>
+            </section>
+            <section class="location">
+                <h2 class="ourLocation hiddenObserve">Our Location</h2>
+                <div class="content">
+                <div class="info">
+                    <h2 class="contactAndLocation hiddenVertical">Contact and Location</h2>
+                    <h3 class="timeOpenning hiddenObserve">We are here for you 24 hours a day, 7 days a week</h3>
+                    <div class="icons hiddenObserve">
+                        <div class="child hiddenObserve">
+                            <div class="icon_address"><i class="fa fa-phone"></i></div>
+                            <div class="inside_info">
+                                <h4 class="phone">Phone</h4>
+                                <p><a href="tel:+97259-284-8457" target="_blank">059-284-8457</a></p>
+                            </div>
+                        </div>
+                        <div class="child hiddenObserve">
+                            <div class="icon_address"><i class="fa fa-envelope"></i></div>
+                            <div class="inside_info">
+                                <h4 class="email">Email</h4>
+                                <p><a href="mailto:codingcompany25@gmail.com" target="_blank">Coding@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="child hiddenObserve">
+                            <div class="icon_address"><i class="fa fa-home"></i></div>
+                            <div class="inside_info">
+                                <h4 class="address">Address</h4>
+                                <p>Gaza-Palestine</p>
+                            </div>
+                        </div>
+                        <div class="child hiddenObserve">
+                            <div class="icon_address"><i class="fa fa-calendar-alt"></i></div>
+                            <div class="inside_info">
+                                <h4 class="hours">Hours</h4>
+                                <p>Open 24 Hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="d-block d-none" style="height: 2px; width: 100%; background:#b8b8b8"></p>
+                <div class="map">
+                    <iframe loading="lazy"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13607.26815663965!2d34.47714426003785!3d31.50171248303092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14fd7f054e542767%3A0x7ff98dc913046392!2z2LrYstip!5e0!3m2!1sar!2s!4v1689323221053!5m2!1sar!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </section>
+            <!-- Footer -->
+            <footer id="contact">
+                <div>
+                    <div class="logo hiddenObserve"><img src="./coding-2.png" loading="lazy" alt="logo footer | Coding Company" /></div>
+                    <h3 class="titleCompany hiddenObserve">CODING COMPANY FOR SOFTWARE SERVICES</h3>
+                    <!-- <p>
+                        'Coding' is one of the leading companies in the field of website
+                        design and development and Mobile Applications
+                      </p> -->
+                </div>
+                <div>
+                    <h2 class="quickLinks hiddenObserve">Quickly Links</h2>
+                    <a href="../index.html" class="homeLink hiddenObserve">- Home</a>
+                    <a href="../index.html#about" class="aboutLink hiddenObserve">- About</a>
+                    <a href="../index.html#services" class="serviceLink hiddenObserve">- Services</a>
+                    <!-- <a href="../index.html#team" class="teamLink hiddenObserve">- Our Team</a> -->
+                    <a href="../index.html#works" class="worksLink hiddenObserve">- Our Works</a>
+                    <!-- <a href="contact.html" class="contactLink hiddenObserve">- Contact</a> -->
+                </div>
+                <div>
+                    <h2 class="addresses hiddenObserve">Address</h2>
+                    <p class="hiddenObserve"> <i class="fa-solid fa-location-dot"></i> Gaza</p>
+                    <p class="hiddenObserve"> <i class="fa-solid fa-phone"></i> <a href="tel:+97259-284-8457" target="_blank">Phone</a></p>
+                    <p class="hiddenObserve"> <i class="fa-solid fa-envelope"></i> <a href="mailto:codingcompany25@gmail.com">Coding@gmail.com</a></p>
+                </div>
+                <div>
+                    <div class="social hiddenObserve">
+                        <a class="hiddenObserve" href="https://twitter.com/Cooding_Company"> <i class="fab fa-twitter"></i> </a>
+                        <a class="hiddenObserve" href="https://www.instagram.com/coding._.company"> <i class="fab fa-instagram"></i> </a>
+                        <a class="hiddenObserve" href="https://www.facebook.com/codingcompany77"> <i class="fab fa-facebook"></i> </a>
+                    </div>
+                    <h4 class="followUs">  لاتنسوا متابعتنا على منصات التواصل الاجتماعي </h4>
+
+                    <form action="#" class="hiddenObserve">
+                        <input type="text" placeholder="Enter Your Email">
+                        <button class="btn" type="button" id="submit" disabled>Submit</button>
+                    </form>
+                </div>
+                <!-- <p></p> -->
+            </footer>
+            <!-- Footer -->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../src/js/main.js"></script>
+<script src="../src/js/lang.js"></script>
+<script src="../src/js/sendMail.js"></script>
+<script src="../src/js/animation.js"></script>
+<script>
+    window.onscroll = () => {
+            navbar.classList.add('shadow');
+            if (scrollY == 0) { navbar.classList.remove('shadow') };
+
+            if (scrollY >= 210) {
+                navbar.style = `background : ${primaryClr};`;
+                MobileNav.style = `background: ${primaryClr};  backdrop-filter:blur(0)`;
+            } else {
+                navbar.style = `background : none`;
+                MobileNav.style = `background : none`;
+            }
+        }
+</script>
+</body>
+</html>
