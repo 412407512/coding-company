@@ -36,9 +36,9 @@ iconNavbar.addEventListener("click", () => {
 });
 
 if (/Mobi/.test(navigator.userAgent)) {
-  console.log("phone");
+  console.log(" YOU ARE USING :'phone'");
 } else {
-  console.log("desktop");
+  console.log("YOU ARE USING : 'desktop'");
 }
 
 // redirect to services
@@ -87,41 +87,30 @@ imgExpanded &&
     imgExpanded && imgExpanded.classList.remove("expand");
   });
 
+
+// run video
+
+
+
+
+// heighLite on active Link 🙂
 function highLightNavLinkBySections() {
   let sections = document.querySelectorAll(".container > section");
   sections &&
     sections.forEach((section) => {
       const section_id = section.getAttribute("id");
       const navLink = navbar.querySelector(`a[href="#${section_id}"]`);
-      if (
-        section.getBoundingClientRect().top <= 0 &&
-        section.getBoundingClientRect().bottom >= 0
-      ) {
-        navLink.style.color = `${secondClr}`;
+      if (section.getBoundingClientRect().top <= 0 && section.getBoundingClientRect().bottom >= 0) {
+          navLink.style.color = `${secondClr}`;
       } else {
-        navLink.style.color = ``;
+        navLink.style.color = '#fff';
       }
     });
 }
 document.addEventListener("DOMContentLoaded", () => {
-  highLightNavLinkBySections();
-});
-
-// run video
-
-let puse = document.querySelector(".puse"),
-icon = puse.querySelector("i");
-
-icon.addEventListener("click", () => {
-  if (icon.classList.contains('fa-play'))
+  
+  if(navbar.dataset.page == 'index')
   {
-    puse.previousElementSibling.play();
-    icon.classList.replace('fa-play', 'fa-pause');
-  }
-  else if (icon.classList.contains('fa-pause'))
-  {
-    puse.previousElementSibling.pause();
-    icon.classList.replace('fa-pause','fa-play') ;
+    highLightNavLinkBySections();
   }
 });
-
